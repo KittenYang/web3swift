@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
     spec.swift_version = '5.5'
 
     # Make this line same as Web3Core sources
-    spec.source_files =  "Sources/web3swift/**/*.swift"
+    spec.source_files =  "Sources/web3swift/{EthereumAPICalls,HookedFunctions,Operations,Tokens,Utils,Web3}/**/*.swift"
     spec.exclude_files = 'Sources/web3swift/Browser/*.swift'
 #     spec.ios.source_files   = 'Sources/web3swift/Browser/*.swift'
     spec.resource_bundle = { "Browser" => "Sources/web3swift/Browser/*.js" }
