@@ -66,7 +66,7 @@ public struct Web3 {
     
     /// Initialized Web3 instance bound to Infura's goerli provider.
     public static func InfuraGoerliWeb3(accessToken: String? = nil) async -> web3 {
-        let infura = await InfuraProvider(Networks.Goerli, accessToken: accessToken)!
+        let infura = InfuraProvider(Networks.Goerli, accessToken: accessToken)!
         return web3(provider: infura)
     }
 
